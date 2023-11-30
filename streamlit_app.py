@@ -44,7 +44,7 @@ try:
 except URLError as e:
   streamlit.error()
 
-streamlit.title("View Our Fruit List - Add Your Favorites!")
+streamlit.header("View Our Fruit List - Add Your Favorites!")
 #Snowflake-related functions
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 
